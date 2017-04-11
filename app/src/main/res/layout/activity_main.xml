@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="相机调用"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="相册调用"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_base"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_camera_to_cut"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ll_base"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="相机自定义剪切"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_photo_to_cut"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="相册自定义剪切"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_cut"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_system_cut_photo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="相册系统剪切"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_custom"
+        android:layout_margin="5dp" />
+
+</RelativeLayout>
